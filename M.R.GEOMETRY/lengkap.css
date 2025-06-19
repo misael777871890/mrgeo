@@ -1,0 +1,147 @@
+/* RESET DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #181b24;
+  color: #fff;
+  line-height: 1.6;
+  background-image: url('limas-pattern.png');
+  background-size: contain;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding-bottom: 4rem;
+}
+
+/* OUTLINE PADA TEKS */
+h1, h2, h3, p, a, button {
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* HEADER & NAV */
+header {
+  background: linear-gradient(to right, #2c2f3a, #1a1c25);
+  padding: 1.5rem;
+  text-align: center;
+  border-bottom: 2px solid #444;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #f0db4f;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #444;
+  color: #fff;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 1rem;
+}
+
+/* SOAL LATIHAN */
+.soal {
+  background-color: #252836;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.soal h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.pilihan button {
+  display: block;
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 0.6rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #333851;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 1rem;
+}
+
+.pilihan button:hover {
+  background-color: #555a78;
+}
+
+.penjelasan {
+  background-color: #f0f0f0;
+  color: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+}
+
+.penjelasan.show {
+  max-height: 300px;
+  padding: 1rem;
+}
+
+/* TOMBOL KEMBALI */
+.back-button {
+  display: inline-block;
+  margin: 2rem auto;
+  padding: 0.8rem 1.5rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #666;
+}
+
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: #888;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
